@@ -16,7 +16,7 @@ def play_super_six(strat_list, num_sticks):
             if game.players[i].finished:
                 
                 fin = True
-                winning_strategy = game.players[i].strategy.__name__
+                winning_strategy = game.players[i].strategy.__doc__
                 break
             elif game.board.finished:
                 fin = True
