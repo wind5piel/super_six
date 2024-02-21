@@ -1,5 +1,7 @@
 temp/*
+trial_and_error.ipynb
 Super Six.md
 __pycache__
 data/*
 print_strat_list.py
+.gitignore
