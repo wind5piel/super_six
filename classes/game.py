@@ -12,6 +12,7 @@ class Game():
 
         self.board = Board(num_sticks)
         self.players = [Player(f'Player {i+1}', sticks_per_player, list_of_strategies[i]) for i in range(num_players)]
+        self.round = 0
 
 
         
@@ -38,3 +39,7 @@ class Game():
                 
 
                 self.board.toggle_position(face)
+            
+            if self.round == 1:
+                # In the first round, every player gets to roll the die just once
+                active_player.go_on = False
